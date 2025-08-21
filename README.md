@@ -1,13 +1,32 @@
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   API-1 (HTTP)  │    │   API-2 (Job)   │    │     Redis       │
-│   Porta: 9000   │◄──►│   Consumer      │◄──►│     Fila        │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-         │                       │                       │
-         ▼                       ▼                       ▼
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Nginx         │    │   PostgreSQL    │    │   Banco FIPE    │
-│   Porta: 8080   │    │  3 Tabelas      │    │   Dados         │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
+# 📋 **Sistema Magnum FIPE**
+
+## 🎯 **Visão Geral**
+Sistema completo de consulta e armazenamento de dados FIPE com arquitetura microservices, filas Redis e processamento assíncrono.
+
+🛠️ <h4>Tecnologias Utilizadas</h4>
+🔧 Backend
+🐘 PHP 8.2 com Composer
+
+🐳 Docker e Docker Compose
+
+🚀 Nginx como proxy reverso
+
+🗃️ PostgreSQL com PDO
+
+🔴 Redis para filas e cache
+
+📦 Predis client para Redis
+
+⚡ Ferramentas
+🔐 Autenticação JWT
+
+📡 API RESTful
+
+⚡ Processamento assíncrono
+
+📊 Logs estruturados
+
+🛡️ Tratamento de erros robusto
 
 DOCKER PRECISA ESTÁ LIGADO
 
